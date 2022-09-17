@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact me </title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script defer src="script.js"></script>
+    </head>
+    
+    <body>
+        <div id="container" class="container">
+            <h1> Contact me </h1>
+            <p> We are always happy to find out what's on your mind </p>
+
+            <form>
+                <span id="name-error">  </span>
+                <input 
+                    id="firstName" 
+                    type="text" 
+                    class="field" 
+                    placeholder="First Name" 
+                    onkeyup="validateName()"
+                    >
+                
+                <span id="email-error">  </span>
+                <input 
+                    id ="email" 
+                    type="text" 
+                    class="field" 
+                    placeholder="Email" 
+                    onkeyup="validateEmail()"
+                    >
+                
+                <span id="message-error"> </span>
+                <textarea rows="5" id="message" class="field" placeholder="Message" onkeyup="validateMessage()"></textarea>
+                
+                <button class="btn" onclick="return validateForm()">Send</button>
+                <span id="submit-error"> </span>
+
+            </form>
+
+        </div>
+    </body>
+</html>
